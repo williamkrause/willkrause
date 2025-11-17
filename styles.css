@@ -6,6 +6,8 @@ body {
     background-image: url('water_tile.png');
     background-repeat: repeat;
     color: #FF8012;
+    text-shadow: 2px 2px 5px black;
+    line-height: 1.25;
     text-align: center;
 }
 
@@ -18,7 +20,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
     color: #FF8012;
     text-align: center;
 }
@@ -39,19 +41,21 @@ footer {
     text-align: center;
     width: 90%;
     max-width: 1000px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 h1 {
     font-family: 'Flavors', cursive;
+    font-size: 36px;
     color: #FF00E6;
     margin: 0;
 }
 
 .hello-friends {
     font-family: 'Fasthand', cursive;
+    font-size: 32px;
     color: #F7FF00;
-    margin: 10px 0;
+    margin: 0px 0;
 }
 
 .current-job, .team-text {
@@ -80,7 +84,7 @@ h1 {
 }
 
 .cat-left, .cat-right {
-    width: 200px;  /* Making the cats twice as large */
+    width: 180px;  /* Making the cats twice as large */
     height: auto;
     margin: 0 20px;
 }
@@ -97,7 +101,7 @@ h1 {
     width: 25%;  /* Making the under_construction image half the size */
     max-width: 250px;
     height: auto;
-    margin: 20px 0;
+    margin: 0px 0;
 }
 
 /* Desktop Layout (min-width: 800px) */
@@ -107,7 +111,8 @@ h1 {
         position: absolute;
         top: 50px;
         width: 100%;
-        max-width: 1200px;
+        margin-top: 60px;
+        max-width: 1000px;
     }
 
     .cat-left, .cat-right {
@@ -127,14 +132,14 @@ h1 {
     }
 }
 
-/* Tablet Layout (width between 799px and 600px) */
-@media screen and (max-width: 799px) and (min-width: 600px) {
+/* Tablet Layout (width between 799px and 321px) */
+@media screen and (max-width: 799px) and (min-width: 321px) {
     .cats {
-        justify-content: space-evenly;
-        margin-top: 0;
-        position: absolute;
-        top: 50px;
+        display: block;
         width: 100%;
+        margin-top: 0px;
+        margin-bottom: -80px;
+        justify-content: center;
     }
 
     .cat-left, .cat-right {
@@ -154,17 +159,18 @@ h1 {
     }
 }
 
-/* Mobile Layout (max-width: 599px) */
-@media screen and (max-width: 599px) {
+/* Mobile Layout (max-width: 320px) */
+@media screen and (max-width: 320px) {
     .cats {
         display: block;
         width: 100%;
         margin-top: 20px;
         justify-content: center;
+        margin-bottom: -120px;
     }
 
     .cat-left, .cat-right {
-        width: 90%;  /* Making the cats twice as large for mobile */
+        width: 140px;  /* Making the cats twice as large for mobile */
         margin: 0 auto;
     }
 
