@@ -127,8 +127,8 @@ h1 {
     }
 }
 
-/* Tablet Layout (width between 799px and 321px) */
-@media screen and (max-width: 799px) and (min-width: 321px) {
+/* Tablet Layout (width between 799px and 600px) */
+@media screen and (max-width: 799px) and (min-width: 600px) {
     .cats {
         justify-content: space-evenly;
         margin-top: 0;
@@ -154,12 +154,13 @@ h1 {
     }
 }
 
-/* Mobile Layout (max-width: 320px) */
-@media screen and (max-width: 320px) {
+/* Mobile Layout (max-width: 599px) */
+@media screen and (max-width: 599px) {
     .cats {
         display: block;
         width: 100%;
         margin-top: 20px;
+        justify-content: center;
     }
 
     .cat-left, .cat-right {
