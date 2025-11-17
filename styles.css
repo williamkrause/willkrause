@@ -73,14 +73,16 @@ h1 {
 /* Cat image positioning */
 .cats {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 20px;
 }
 
 .cat-left, .cat-right {
-    width: 100px;
+    width: 200px;  /* Making the cats twice as large */
     height: auto;
+    margin: 0 20px;
 }
 
 /* Responsive Images */
@@ -92,8 +94,8 @@ h1 {
 }
 
 .under-construction {
-    width: 50%;
-    max-width: 500px;
+    width: 25%;  /* Making the under_construction image half the size */
+    max-width: 250px;
     height: auto;
     margin: 20px 0;
 }
@@ -102,6 +104,10 @@ h1 {
 @media screen and (min-width: 800px) {
     .cats {
         justify-content: space-between;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        max-width: 1200px;
     }
 
     .cat-left, .cat-right {
@@ -113,7 +119,7 @@ h1 {
     }
 
     .under-construction {
-        width: 50%;
+        width: 25%;
     }
 
     .text-block {
@@ -126,10 +132,13 @@ h1 {
     .cats {
         justify-content: space-evenly;
         margin-top: 0;
+        position: absolute;
+        top: 50px;
+        width: 100%;
     }
 
     .cat-left, .cat-right {
-        width: 80px;
+        width: 200px;  /* Making the cats twice as large */
     }
 
     .minecraft-logo {
@@ -137,7 +146,7 @@ h1 {
     }
 
     .under-construction {
-        width: 60%;
+        width: 25%;
     }
 
     .text-block {
@@ -154,7 +163,7 @@ h1 {
     }
 
     .cat-left, .cat-right {
-        width: 45%;
+        width: 90%;  /* Making the cats twice as large for mobile */
         margin: 0 auto;
     }
 
@@ -163,7 +172,7 @@ h1 {
     }
 
     .under-construction {
-        width: 70%;
+        width: 50%;  /* Making the under_construction image half the size */
     }
 
     .text-block {
